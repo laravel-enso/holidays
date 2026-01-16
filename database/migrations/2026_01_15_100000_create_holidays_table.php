@@ -11,7 +11,7 @@ return new class extends Migration {
         Schema::create('holidays', function (Blueprint $table) {
             $table->id();
 
-            $table->foreignIdFor(HolidayYear::class)->constrained();
+            $table->foreignIdFor(HolidayYear::class, 'year_id')->constrained();
             $table->string('name');
             $table->text('description')->nullable();
             $table->date('date');

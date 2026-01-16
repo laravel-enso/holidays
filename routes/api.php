@@ -10,6 +10,6 @@ Route::middleware(['api', 'auth', 'core'])
     ->as('holidays.')
     ->group(function () {
         Route::get('', Index::class)->name('index');
-        Route::get('{holiday}/toggle', Toggle::class)->name('toggle');
-        Route::get('{holidayYear}', Show::class)->name('show');
+        Route::patch('{holiday}/toggle', Toggle::class)->name('toggle');
+        Route::get('{year}', Show::class)->name('show');
     });

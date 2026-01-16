@@ -3,6 +3,7 @@
 namespace LaravelEnso\Holidays\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Facades\Config;
 
 class Holiday extends JsonResource
 {
@@ -10,12 +11,11 @@ class Holiday extends JsonResource
     {
         return [
             'id' => $this->id,
-            'year' => $this->whenLoaded('year')->year,
+            'date' => $this->date->format(Config::get('enso.config.dateFormat')),
+            'month' => $this->date->month,
             'name' => $this->name,
             'description' => $this->description,
-            'isEditable' => $this->is_working_day,
-            'createdAt' => $this->created_at->toDatetimeString(),
-            'updatedAt' => $this->updated_at->toDatetimeString(),
+            'isWorkingDay' => $this->is_working_day,
         ];
     }
 }

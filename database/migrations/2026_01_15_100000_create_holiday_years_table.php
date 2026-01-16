@@ -9,9 +9,7 @@ return new class extends Migration {
     {
         Schema::create('holiday_years', function (Blueprint $table) {
             $table->id();
-
             $table->unsignedInteger('year');
-
             $table->timestamps();
         });
     }
