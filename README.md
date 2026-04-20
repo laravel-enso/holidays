@@ -61,6 +61,10 @@ Each holiday resource exposes:
 - `LaravelEnso\\Holidays\\Models\\Holiday`
 - `LaravelEnso\\Holidays\\Models\\HolidayYear`
 
+## Depends On
+
+The package does not require additional Enso backend packages beyond the host Laravel application.
+
 ## Contributions
 
 are welcome. Pull requests are great, but issues are good too.
