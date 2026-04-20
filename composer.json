@@ -1,10 +1,22 @@
 {
     "name": "laravel-enso/holidays",
     "type": "library",
-    "description": "",
-    "authors": [],
-    "keywords": [],
-    "homepage": "https://www.laravel-enso.com",
+    "description": "Holiday calendar management for Laravel Enso",
+    "authors": [
+        {
+            "name": "Laravel Enso",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "laravel-enso",
+        "holidays",
+        "calendar",
+        "working-days"
+    ],
+    "homepage": "https://github.com/laravel-enso/holidays",
+    "license": "MIT",
     "require": {
         "php": ">=8.2",
         "laravel/framework": "^10.0|^11.0|^12.0"
