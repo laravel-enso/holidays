@@ -65,6 +65,10 @@ Each holiday resource exposes:
 
 The package does not require additional Enso backend packages beyond the host Laravel application.
 
+Companion frontend package:
+
+- [`@enso-ui/holidays`](https://docs.laravel-enso.com/frontend/holidays.html) [↗](https://github.com/enso-ui/holidays)
+
 ## Contributions
 
 are welcome. Pull requests are great, but issues are good too.
